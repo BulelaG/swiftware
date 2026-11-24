@@ -1,0 +1,81 @@
+.site-header {
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(24px) saturate(175%);
+  -webkit-backdrop-filter: blur(24px) saturate(175%);
+  box-shadow: 0 12px 34px rgba(32, 35, 31, 0.1);
+}
+
+.nav-cta,
+.art-label {
+  background: rgba(255, 255, 255, 0.58);
+  border-color: rgba(255, 255, 255, 0.76);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  box-shadow: 0 12px 30px rgba(32, 35, 31, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.product-window {
+  background: rgba(255, 255, 255, 0.68);
+  border-color: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(22px) saturate(155%);
+  -webkit-backdrop-filter: blur(22px) saturate(155%);
+  box-shadow: 0 42px 100px rgba(32, 35, 31, 0.2), 0 14px 32px rgba(32, 35, 31, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  transition: box-shadow 220ms ease, transform 220ms ease;
+}
+
+.product-window:hover {
+  box-shadow: 0 52px 112px rgba(32, 35, 31, 0.24), 0 18px 36px rgba(32, 35, 31, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  transform: rotate(0deg) translateY(-3px);
+}
+
+.window-content aside,
+.window-main,
+.window-bar {
+  background-color: rgba(255, 255, 255, 0.74);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.tier-card {
+  background: rgba(255, 255, 255, 0.66);
+  border-color: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(18px) saturate(145%);
+  -webkit-backdrop-filter: blur(18px) saturate(145%);
+  box-shadow: 0 12px 32px rgba(32, 35, 31, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.92);
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.tier-card:hover {
+  border-color: #c6cfb7;
+  box-shadow: 0 24px 54px rgba(32, 35, 31, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.96);
+  transform: translateY(-4px);
+}
+
+.service-row>a {
+  transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.service-row>a:hover {
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 12px 28px rgba(32, 35, 31, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+.button-dark {
+  box-shadow: 0 14px 32px rgba(32, 35, 31, 0.2), 0 3px 8px rgba(32, 35, 31, 0.12);
+}
+
+.button-light {
+  box-shadow: 0 16px 36px rgba(147, 177, 55, 0.24), 0 4px 10px rgba(32, 35, 31, 0.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
